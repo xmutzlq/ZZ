@@ -1,0 +1,149 @@
+<resources>
+
+    <string name="app_name">BopZZ</string>
+
+    <string name="str_back">返回</string>
+    
+    <string name="gallery">Gallery</string>
+    <string name="all_photo">All Photo</string>
+    <string name="selected">selected(%1$d/%2$d)</string>
+    <string name="photo_selected">已添加了%d张照片</string>
+    <string name="folder_photo_size">%1$d 张</string>
+    <string name="photo_edit">Photo Edit</string>
+    <string name="photo_crop">Photo Crop</string>
+    <string name="crop_suc">图片裁剪成功</string>
+    <string name="crop_fail">图片裁剪失败</string>
+    <string name="no_photo">Photo empty</string>
+    <string name="waiting">请稍后…</string>
+    <string name="select_max_tips">Has reached the maximum number selection!</string>
+    <string name="empty_sdcard">没有SDCard</string>
+    <string name="open_gallery_fail">Gallery init failure!</string>
+    <string name="take_photo_fail">Take photo failure</string>
+    <string name="saving">正在保存图片…</string>
+    <string name="please_reopen_gf">Please reopen Gallery</string>
+    <string name="edit_letoff_photo_format">The image format does not support this operation!</string>
+    <string name="photo_list_empty">Failed to get the picture!</string>
+    <string name="preview">Preview</string>
+    <string name="permissions_tips_gallery">This app requesting access to your Gallery</string>
+    <string name="permissions_denied_tips">Unable to get pictures</string>
+    <string name="maxsize_zero_tip">Maxsize should be greater than zero</string>
+    <string name="bs_more">More</string>
+    <string name="device_type">phone</string>
+    
+    <string name="vista_share_title">分享</string>
+    
+    <string name="action_settings">Settings</string>
+    
+    <!-- 制作相册 -->
+    <string name="str_less_than_three_photos">至少上传3张美照</string>
+    
+    <string name="str_albums_imgs_build_label">制作了</string>
+    <string name="str_albums_imgs_build_value">%d个相册</string>
+    <string name="str_albums_imgs_reward_label">收到打赏</string>
+    <string name="str_albums_imgs_reward_value">%s元</string>
+    
+    <!-- 我的相册 -->
+    <string name="str_my_albums">我的相册</string>
+    <string name="str_my_albums_fans">大家快来看看我的相册~</string>
+    <string name="str_my_albums_scans">浏览：%d次</string>
+    <string name="str_my_albums_rewards">打赏：%d次</string>
+    <string name="str_my_albums_rewards_money">打赏金额：¥%s</string>
+    <string name="str_my_albums_rewards_record">打赏记录</string>
+    
+    <string name="str_del">删除</string>
+    <string name="str_edit">编辑</string>
+    <string name="str_share">分享</string>
+    <string name="str_fill_in">填写</string>
+    
+    <string name="str_title_comfirm_del">确定要删除吗？</string>
+    <string name="str_title_comfirm_del_albums">删除相册后，您分享出去的链接会失效。</string>
+    
+    <!-- 我的打赏 -->
+    <string name="str_my_rewards">我的打赏</string>
+    <string name="str_balance">余额：%s</string>
+    <string name="str_balance_tip">(满%s元即可申请提现)</string>
+    <string name="str_accumulate_withdraws">累计提现：%s</string>
+    <string name="str_accumulate_recieve_rewards">累计收到打赏：%s</string>
+    <string name="str_accumulate_withdraws_record">提现记录</string>
+    <string name="str_accumulate_withdraws_all">全部提现</string>
+    
+    
+    <string name="str_my_account">我的账户</string>
+    <string name="str_my_account_tip">请认真填写您的收款账户信息(不可修改)</string>
+    <string name="str_check_account">结账账户(支付宝)：未填写</string>
+    <string name="str_account_name">账户姓名(支付宝)：未填写</string>
+    
+    <!-- 设置 -->
+    <string name="str_setting">设置</string>
+    <string name="str_setting_head_tip">从2016年11月开始使用美图赚赚赚钱啦！</string>
+    <string name="str_setting_head">设置头像</string>
+    <string name="str_setting_nick_name">设置昵称</string>
+    <string name="str_setting_feed_back">意见反馈</string>
+    <string name="str_setting_reminded">提醒设置</string>
+    <string name="str_setting_check_version">检测新版本(当前版本%s)</string>
+    
+    <string name="str_title_select_photos">选择照片</string>
+    
+    <string name="str_title_setting_nick_name">设置昵称</string>
+    <string name="str_setting_nick_name_finish">完成</string>
+    <string name="str_setting_nick_name_hint">请输入您的昵称</string>
+    
+    <string name="str_title_setting_feed_back">意见反馈</string>
+    <string name="str_title_setting_feed_back_send">发送</string>
+    <string name="str_setting_feed_back_tip">有什么想对美图赚赚说的，请写下来吧</string>
+    
+    <string name="str_title_setting_remaind">提醒设置</string>
+    <string name="str_remaind_recieve_message">接收新消息通知</string>
+    <string name="str_remaind_recieve_message_tip">如果您要关闭美图赚赚的新消息通知，将无法及时收到重要消息！</string>
+    <string name="str_remaind_voice">声音</string>
+    <string name="str_remaind_shack">振动</string>
+    <string name="str_remaind_voice_shack_tip">当美图赚赚运行时，您可以设置是否需要声音或振动提示。</string>
+    
+    <string name="fixedAspectRatio">fixedAspectRatio =</string>
+    <string name="aspectRatioX">\u002010</string>
+    <string name="aspectRatioXHeader">aspectRatioX =</string>
+    <string name="aspectRatioY">\u002010</string>
+    <string name="aspectRatioYHeader">aspectRatioY =</string>
+    <string name="showGuidelines">showGuidelines = </string>
+    <string name="crop">Crop</string>
+    <string name="rotate">Rotate</string>
+    <string name="croppedImageDesc">The cropped image.</string>
+
+    <string-array name="showGuidelinesArray">
+        <item>Off</item>
+        <item>On Touch</item>
+        <item>On</item>
+    </string-array>
+    
+    <string-array name="load_more_style">
+        <item>Default</item>
+        <item>BallPulse</item>
+        <item>BallGridPulse</item>
+        <item>BallClipRotate</item>
+        <item>BallClipRotatePulse</item>
+        <item>SquareSpin</item>
+        <item>BallClipRotateMultiple</item>
+        <item>BallPulseRise</item>
+        <item>BallRotate</item>
+        <item>CubeTransition</item>
+        <item>BallZigZag</item>
+        <item>BallZigZagDeflect</item>
+        <item>BallTrianglePath</item>
+        <item>BallScale</item>
+        <item>LineScale</item>
+        <item>LineScaleParty</item>
+        <item>BallScaleMultiple</item>
+        <item>BallPulseSync</item>
+        <item>BallBeat</item>
+        <item>LineScalePulseOut</item>
+        <item>LineScalePulseOutRapid</item>
+        <item>BallScaleRipple</item>
+        <item>BallScaleRippleMultiple</item>
+        <item>BallSpinFadeLoader</item>
+        <item>LineSpinFadeLoader</item>
+        <item>TriangleSkewSpin</item>
+        <item>Pacman</item>
+        <item>BallGridBeat</item>
+        <item>SemiCircleSpin</item>
+    </string-array>
+</resources>

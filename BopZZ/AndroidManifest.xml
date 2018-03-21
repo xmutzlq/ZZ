@@ -1,0 +1,186 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bop.zz"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <!-- 分享权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name="com.bop.zz.IApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bop.zz.photo.PhotoSelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bop.zz.photo.PhotoEditActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bop.zz.photo.PhotoPreviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bop.zz.refresh.core.ui.fragment.LoadMoreStyleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.MyRewardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bop.zz.photo.HeadSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SettingNickNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SettingFeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SettingRemaindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 图片编辑 -->
+        <activity
+            android:name="com.bop.zz.photo.edit.FilterTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.ImageFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.WarpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.PhotoFrameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.DrawBaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.MosaicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.ImageCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.AddWatermarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.EnhanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.RevolveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.AddTextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bop.zz.photo.edit.MainActivity"
+            android:screenOrientation="portrait" />
+        
+        <!-- 分享 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104996142" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bop.zz.share._ShareActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.bop.zz.share"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="com.bop.zz.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.bop.zz.share._ShareActivity" />
+    </application>
+
+</manifest>

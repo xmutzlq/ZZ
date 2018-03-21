@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF" >
+
+    <include 
+        android:id="@+id/title_bar_lay"
+        layout="@layout/comm_title_bar"/>
+    
+    <FrameLayout
+        android:id="@+id/photo_content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar_lay" >
+
+        <GridView
+            android:id="@+id/gv_photo_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:fadingEdge="none"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:verticalSpacing="1dp" />
+
+        <TextView
+            android:id="@+id/tv_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/waiting"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_16" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_photo_folder_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" 
+        android:background="@color/alpha_white" 
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/photo_list_dir_icon" />
+
+        <TextView
+            android:id="@+id/tv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近照片"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_15" />
+    </LinearLayout>
+
+</RelativeLayout>

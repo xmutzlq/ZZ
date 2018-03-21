@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_EDEDED"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/comm_title_bar" />
+
+            <include layout="@layout/comm_view_divider" />
+            <!-- 我的打赏 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13dp"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    android:id="@+id/top_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/my_reward_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/str_my_rewards"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/txt_size_15" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_part"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="@string/str_balance"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/txt_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_balance_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_balance"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="@string/str_balance_tip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_balance_tip"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_accumulate_withdraws"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_accumulate_withdraws"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/txt_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_accumulate_recieve_rewards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:text="@string/str_accumulate_recieve_rewards"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/txt_size_15" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                android:background="@color/white" >
+
+                <include layout="@layout/comm_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:id="@+id/tv_accumulate_withdraws_record"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/str_accumulate_withdraws_record"
+                            android:textColor="@color/color_282828"
+                            android:textSize="@dimen/txt_size_16" />
+                    </FrameLayout>
+
+                    <include layout="@layout/comm_line_vertical" />
+
+                    <FrameLayout
+                        android:id="@+id/tv_accumulate_withdraws_all"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/str_accumulate_withdraws_all"
+                            android:textColor="@color/color_34aaf3"
+                            android:textSize="@dimen/txt_size_16" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <include layout="@layout/comm_line_deep" />
+            </LinearLayout>
+
+            <include layout="@layout/comm_view_divider" />
+
+            <!-- 我的账户 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13dp"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    android:id="@+id/top_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/my_reward_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/str_my_account"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/txt_size_15" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_balance_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_part"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/my_reward_account_tip_icon"
+                    android:paddingTop="15dp"
+                    android:text="@string/str_my_account_tip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_balance_tip"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_check_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_check_account"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/txt_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:text="@string/str_account_name"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/txt_size_15" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_fill_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_fill_in"
+                    android:textColor="@color/color_34aaf3"
+                    android:textSize="@dimen/txt_size_17" />
+            </RelativeLayout>
+            <include layout="@layout/comm_line_deep" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

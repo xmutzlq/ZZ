@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <include 
+        android:id="@+id/toolbar"
+        layout="@layout/comm_title_bar"/>
+    
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/bottom_linear"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/pictureShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addPictureFromPhoto"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="相册" 
+            android:textColor="#979797"
+            android:textSize="@dimen/txt_size_18"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/addPictureFromCamera"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="相机"
+            android:textColor="#979797"
+            android:textSize="@dimen/txt_size_18"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/testBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="测试"
+            android:textColor="#32cd99"
+            android:textSize="@dimen/txt_size_18" />
+    </LinearLayout>
+
+</RelativeLayout>

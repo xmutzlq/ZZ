@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/statu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gf_title_bar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/gf_title_bar_height"
+            android:layout_height="@dimen/gf_title_bar_height"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gf_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/photo_edit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gf_preview"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gf_crop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gf_rotate"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:padding="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gf_camera"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

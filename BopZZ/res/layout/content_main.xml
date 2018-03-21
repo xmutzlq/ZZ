@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigChoiseActivity"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主题(Theme)"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_theme_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Default"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_theme_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_theme_cyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyan"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_theme_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orange"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_theme_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_theme_teal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teal"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_theme_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark"
+                />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片ImageLoader选择(Image Loader)"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_uil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="UIL"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_glide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glide"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_picasso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picasso"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_fresco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Fresco"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_xutils3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xUtils3"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_xutils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xUtils"
+                />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="选择模式（Select Mode）"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_single_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单选(Single Select)"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_muti_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="多选(Multi Select)"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_max_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最大数量（Max Size）"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/et_max_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minWidth="100dp"
+            android:text="8"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="图片编辑（Photo Edit）"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="可编辑(Edit)"
+        />
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="编辑选项（Edit Options）"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/cb_crop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="裁剪（Crop）"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_rotate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="旋转（Rotate）"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/cb_crop_replace_source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="裁剪覆盖原图（Crop Replace Source）"
+                android:textSize="12sp"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_rotate_replace_source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="旋转覆盖原图（Rotate Replace Source）"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_crop_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="裁剪大小（Crop Size）"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/et_crop_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Width"
+                android:inputType="number"
+                android:minWidth="30dp"
+                android:textSize="12sp"
+                />
+            <EditText
+                android:id="@+id/et_crop_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Height"
+                android:inputType="number"
+                android:minWidth="30dp"
+                android:textSize="12sp"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_crop_square"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="裁剪正方形（Crop Square）"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_force_crop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="强制裁剪（Force Crop）--只针对单选生效"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/cb_open_force_crop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="强制裁剪（Force Crop）"
+                    android:textSize="12sp"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_open_force_crop_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="强制裁剪后可编辑（Force Crop Edit）"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="相机（Camera）"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_show_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="显示相机(Show Camera)"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="相机（Camera）"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+
+    <CheckBox
+        android:id="@+id/cb_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="启动预览(Preview)"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="动画（Animation）"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_no_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭(No Animation)"
+        />
+
+    <Button
+        android:id="@+id/btn_open_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Gallery"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="返回结果(Results)"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <com.bop.zz.photo.widget.HorizontalListView
+        android:id="@+id/lv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipToPadding="false"
+        android:fadingEdge="none"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:verticalSpacing="2dp"
+        />
+</LinearLayout>

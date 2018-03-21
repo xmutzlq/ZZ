@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 pengjianbo(pengjianbosoft@gmail.com), Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<resources>
+    <!--<attr name="colorTheme" format="reference|color"/>-->
+    <!--<attr name="colorThemeDark" format="reference|color"/>-->
+
+    <declare-styleable name="GFFloatingActionButton">
+        <attr name="fabColorPressed" format="color"/>
+        <attr name="fabColorNormal" format="color"/>
+        <attr name="fabIcon" format="reference"/>
+        <attr name="fabTitle" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CardView">
+        <!-- Background color for CardView. -->
+        <!-- 背景色 -->
+        <attr name="cardBackgroundColor" format="color" />
+        <!-- Corner radius for CardView. -->
+        <!-- 边缘弧度数 -->
+        <attr name="cardCornerRadius" format="dimension" />
+        <!-- Elevation for CardView. -->
+        <!-- 高度 -->
+        <attr name="cardElevation" format="dimension" />
+        <!-- Maximum Elevation for CardView. -->
+        <!-- 最大高度 -->
+        <attr name="cardMaxElevation" format="dimension" />
+        <!-- Add padding in API v21+ as well to have the same measurements with previous versions. -->
+        <!-- 设置内边距，v21+的版本和之前的版本仍旧具有一样的计算方式 -->
+        <attr name="cardUseCompatPadding" format="boolean" />
+        <!-- Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. -->
+        <!-- 在v20和之前的版本中添加内边距，这个属性是为了防止卡片内容和边角的重叠 -->
+        <attr name="cardPreventCornerOverlap" format="boolean" />
+        <!-- 下面是卡片边界距离内部的距离-->
+        <!-- Inner padding between the edges of the Card and children of the CardView. -->
+        <attr name="contentPadding" format="dimension" />
+        <!-- Inner padding between the left edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingLeft" format="dimension" />
+        <!-- Inner padding between the right edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingRight" format="dimension" />
+        <!-- Inner padding between the top edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingTop" format="dimension" />
+        <!-- Inner padding between the bottom edge of the Card and children of the CardView. -->
+        <attr name="contentPaddingBottom" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="GifMoviewView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifMoviewViewStyle" format="reference" />
+    </declare-styleable>
+    
+    <!-- 圆形ImageView属性 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="BottomSheet">
+        <attr name="bs_bottomSheetStyle" format="reference"/>
+        <attr name="bs_dialogBackground" format="color|reference" />
+        <attr name="bs_listStyle" format="reference"/>
+        <attr name="bs_dividerColor" format="color|reference" />
+        <attr name="bs_numColumns" format="integer"/>
+        <attr name="bs_titleTextAppearance" format="reference" />
+        <attr name="bs_listItemTitleTextAppearance" format="reference" />
+        <attr name="bs_gridItemTitleTextAppearance" format="reference" />
+        <attr name="bs_moreDrawable" format="reference"/>
+        <attr name="bs_moreText" format="string"/>
+        <attr name="bs_closeDrawable" format="reference"/>
+        <attr name="bs_collapseListIcons" format="boolean"/>
+        <attr name="bs_listItemLayout" format="reference" />
+        <attr name="bs_gridItemLayout" format="reference" />
+        <attr name="bs_headerLayout" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="ToggleButton">
+        <attr name="tbBorderWidth" format="dimension"/>
+        <attr name="tbOffBorderColor" format="reference|color"/>
+        <attr name="tbOffColor" format="reference|color"/>
+        <attr name="tbOnColor" format="reference|color"/>
+        <attr name="tbSpotColor" format="reference|color"/>
+        <attr name="tbAnimate" format="reference|boolean"/>
+        <attr name="tbAsDefaultOn" format="reference|boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ColorPicker">
+        <attr name="color_wheel_radius" format="dimension" />
+        <attr name="color_wheel_thickness" format="dimension" />
+        <attr name="color_center_radius" format="dimension" />
+        <attr name="color_center_halo_radius" format="dimension"/>
+        <attr name="color_pointer_radius" format="dimension" />
+        <attr name="color_pointer_halo_radius" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="ColorBars">
+        <attr name="bar_thickness" format="dimension" />
+        <attr name="bar_length" format="dimension" />
+        <attr name="bar_pointer_radius" format="dimension" />
+        <attr name="bar_pointer_halo_radius" format="dimension" />
+        <attr name="bar_orientation_horizontal" format="boolean" />
+    </declare-styleable>
+</resources>

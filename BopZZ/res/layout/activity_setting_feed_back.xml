@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <include layout="@layout/comm_title_bar"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:textColor="@color/color_666666"
+	    android:textSize="@dimen/txt_size_15"
+	    android:text="@string/str_setting_feed_back_tip"
+	    android:background="@color/color_EFEFEF"/>
+	<EditText
+	    android:id="@+id/et_feed_back"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:background="@null"
+	    android:textColor="@color/color_282828"
+	    android:textSize="@dimen/txt_size_15"
+	    android:gravity="start"
+	    android:maxLines="8"
+	    android:lines="8"/>
+</LinearLayout>

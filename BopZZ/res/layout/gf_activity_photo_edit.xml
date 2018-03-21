@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+	<include layout="@layout/photo_edit_title_bar"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.bop.zz.photo.widget.zoonview.PhotoView
+                android:id="@+id/iv_source_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gf_crop_texture" />
+
+            <com.bop.zz.photo.widget.photodraweeview.PhotoDraweeView
+                android:id="@+id/iv_fresco_source_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gf_crop_texture"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.bop.zz.photo.widget.crop.CropImageView
+            android:id="@+id/iv_crop_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gf_crop_texture"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.bop.zz.photo.widget.FloatingActionButton
+            android:id="@+id/fab_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            app:fabIcon="@drawable/ic_gf_done" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d2d2d7" />
+        
+        <com.bop.zz.photo.widget.HorizontalListView
+            android:id="@+id/lv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+</LinearLayout>

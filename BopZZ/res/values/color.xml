@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_bg">#f5f5f5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="alpha_white">#CCFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="color_282828">#282828</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="color_EDEDED">#EDEDED</color>
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_34aaf3">#34aaf3</color>
+    
+    <color name="toast_bg">#e6EDEDED</color>
+    <color name="toast_success_content">#A0792E</color>
+    <color name="toast_fail_bg">#cce9626b</color>
+    <color name="toast_success_bg">#ccfbe298</color>
+    
+    <color name="grey700">#616161</color>
+    <color name="text_gray">#ff909090</color>
+    <color name="txt_gray_light">#a0a0a0</color>
+    <color name="grey_bg">#c8c8c8</color>
+    <color name="text_black">#212121</color>
+    
+    <color name="pop_window_bg">#88000000</color>
+    
+    <!-- Background color for light CardView. -->
+    <color name="cardview_light_background">#FFFAFAFA</color>
+    <!-- Background color for dark CardView. -->
+    <color name="cardview_dark_background">#FF202020</color>
+    <!-- Shadow color for the first pixels around CardView. -->
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <!-- Shadow color for the furthest pixels around CardView. -->
+    <color name="cardview_shadow_end_color">#03000000</color>
+    
+    <color name="ios_btntext_blue">#007aff</color>
+    <color name="text_title_11">#111111</color>
+    <color name="text_msg_33">#333333</color>
+    <color name="text_input_44">#444444</color>
+    <color name="text_item_33">#333333</color>
+    <color name="btn_alert">#222222</color>
+    <color name="line_dd">#dddddd</color>
+    <color name="ios_btn_normal">#ffffff</color>
+    <color name="ios_btn_pressed">#eeeeee</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_gray_light">#B3B3B3</color>
+    <color name="text_black">#333333</color>
+    <color name="text_black_light">#666666</color>
+
+    <color name="bs_divider_color">#1f000000</color>
+    <color name="bs_dark_divider_color">#1fffffff</color>
+    
+    <color name="top_bar_bg">#66000000</color>
+    <color name="bottom_menu_bg">#ff1d1d1d</color>
+
+    <color name="ios7_white">#ffa8a8a8</color>
+    <color name="ios7_gray">#ff646464</color>
+    <color name="ios7_blue">#ff1086ff</color>
+    <color name="bluegrey">#ffd8d8d8</color>
+</resources>

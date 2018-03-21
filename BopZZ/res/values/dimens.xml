@@ -1,0 +1,62 @@
+<resources>
+    <dimen name="gf_title_bar_height">50dp</dimen>
+	<dimen name="avatar_size">80dp</dimen>
+    
+    <dimen name="fab_size_normal">50dp</dimen>
+    <dimen name="fab_icon_size">24dp</dimen>
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+    <dimen name="fab_stroke_width">0.0dp</dimen>
+    
+    <dimen name="bs_grid_left_padding">8dp</dimen>
+    <dimen name="bs_grid_top_padding">0dp</dimen>
+    <dimen name="bs_grid_right_padding">8dp</dimen>
+    <dimen name="bs_grid_bottom_padding">8dp</dimen>
+    
+    <dimen name="round_corner">8dp</dimen>
+    <dimen name="line_1px">1px</dimen>
+    <dimen name="btn_txt_size">14sp</dimen>
+    <dimen name="title_txt_size">17sp</dimen>
+    <dimen name="msg_txt_size">14sp</dimen>
+    <dimen name="item_txt_size">14sp</dimen>
+    <dimen name="input_txt_size">14sp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    
+    <!-- Default radius for CardView corners. -->
+    <dimen name="cardview_default_radius">2dp</dimen>
+    <!-- Elevation value to use for CardViews. Pre-L, it is equal to shadow size. -->
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <!-- Inset shadow for RoundRectDrawableWithShadow. It is used to avoid gaps between the card
+     and the shadow. -->
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="color_wheel_radius">124dp</dimen>
+    <dimen name="color_wheel_thickness">8dp</dimen>
+    <dimen name="color_center_halo_radius">60dp</dimen>
+    <dimen name="color_center_radius">54dp</dimen>
+    <dimen name="color_pointer_halo_radius">18dp</dimen>
+    <dimen name="color_pointer_radius">14dp</dimen>
+
+    <!-- Standart dimens for the bars -->
+    <dimen name="bar_thickness">4dp</dimen>
+    <dimen name="bar_length">240dp</dimen>
+    <dimen name="bar_pointer_radius">6dp</dimen>
+    <dimen name="bar_pointer_halo_radius">14dp</dimen>
+    
+    <dimen name="txt_size_12">12sp</dimen>
+    <dimen name="txt_size_13">13sp</dimen>
+    <dimen name="txt_size_14">14sp</dimen>
+    <dimen name="txt_size_15">15sp</dimen>
+    <dimen name="txt_size_16">16sp</dimen>
+    <dimen name="txt_size_17">17sp</dimen>
+    <dimen name="txt_size_18">18sp</dimen>
+    <dimen name="txt_size_20">20sp</dimen>
+</resources>

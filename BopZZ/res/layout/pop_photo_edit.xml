@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    <include layout="@layout/comm_line_deep"/>
+    <TextView 
+        android:id="@+id/tv_lj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="滤镜"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_rtbx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="人体变形"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_bk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="边框"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_ty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="涂鸦"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_msk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="马赛克"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_jq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="剪切"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_tjsy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="添加水印"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_txzq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="图像增强"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_xz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="旋转"/>
+	<include layout="@layout/comm_line_deep"/>
+	<TextView 
+	    android:id="@+id/tv_tjwz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/txt_size_15"
+        android:textColor="@color/white"
+        android:text="添加文字"/>
+	<include layout="@layout/comm_line_deep"/>
+</LinearLayout>
